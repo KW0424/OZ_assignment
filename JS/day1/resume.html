@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이규원 | Resume</title>
+    <!-- Bootstrap 5.3.8 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- 분리된 CSS 파일 연결 -->
+    <link rel="stylesheet" href="resume_style.css">
+</head>
+<body>
+
+<div class="page-layout">
+    <!-- 왼쪽 고정 내비게이션 사이드바 -->
+    <aside class="sidebar">
+        <a href="#resume-top" class="active">이력서</a>
+        <a href="#projects">포트폴리오</a>
+        <a href="javascript:window.print()">PDF 내보내기</a>
+    </aside>
+
+    <!-- 오른쪽 메인 콘텐츠 -->
+    <main class="main-wrapper" id="resume-top">
+        <div class="resume-paper rounded-2 shadow-sm p-4 p-md-5">
+            
+            <!-- 상단 프로필 헤더 -->
+            <header class="d-flex justify-content-between align-items-center pb-4 mb-4 border-bottom">
+                <div>
+                    <h1 class="fw-bold mb-2 name-title">이규원 <span class="fs-6 fw-normal text-secondary">Lee Kyuwon</span></h1>
+                    <div class="d-flex flex-wrap gap-3 text-secondary small">
+                        <span>📍 충남 천안시</span>
+                        <span>✉️ kw0424@example.com</span>
+                        <a href="https://github.com/KW0424" target="_blank" class="text-decoration-none text-secondary">🔗 GitHub (KW0424)</a>
+                    </div>
+                </div>
+                <!-- 이미지가 있다면 src 경로를 실제 파일명으로 수정해주세요 -->
+                <img src="https://via.placeholder.com/100" alt="프로필 사진" class="profile-img">
+            </header>
+
+            <!-- Introduce 섹션 -->
+            <section class="mb-5">
+                <h2 class="section-title">Introduce</h2>
+                <p class="text-secondary lh-lg mb-0 intro-text">
+                    스포츠건강재활 전공 지식과 현장 지도 경험에 <strong>AI·데이터 분석 역량</strong>을 결합하는 헬스케어 데이터 분석가이자 운동재활 전문가입니다.<br>
+                    호주 시드니 현지 수영 강사 및 다양한 연령·장애 유형 대상 지도 경험을 통해 대상자의 상태를 세밀하게 관찰하고 피드백을 즉각 반영하는 커뮤니케이션 강점을 길렀습니다.<br>
+                    현재는 Python 기반 머신러닝 파이프라인과 데이터베이스를 활용하여 헬스케어·생체 데이터를 구조화하고 실질적인 인사이트로 연결하는 프로젝트를 수행하고 있습니다.
+                </p>
+            </section>
+
+            <!-- Skills 섹션 -->
+            <section class="mb-5">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div>
+                        <div class="skill-category">DATA &amp; MACHINE LEARNING</div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge badge-skill badge-highlight">Python</span>
+                            <span class="badge badge-skill">Pandas</span>
+                            <span class="badge badge-skill">Scikit-learn</span>
+                            <span class="badge badge-skill">LightGBM</span>
+                            <span class="badge badge-skill">XGBoost</span>
+                            <span class="badge badge-skill">CatBoost</span>
+                            <span class="badge badge-skill">Optuna</span>
+                            <span class="badge badge-skill">SHAP</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="skill-category">DATABASE &amp; WEB</div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge badge-skill">MySQL</span>
+                            <span class="badge badge-skill">SQLAlchemy</span>
+                            <span class="badge badge-skill">MongoDB</span>
+                            <span class="badge badge-skill">PyMongo</span>
+                            <span class="badge badge-skill badge-highlight">HTML5 / CSS Grid</span>
+                            <span class="badge badge-skill badge-highlight">Bootstrap 5</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="skill-category">TOOLS &amp; COLLABORATION</div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge badge-skill">VS Code</span>
+                            <span class="badge badge-skill">Google Colab</span>
+                            <span class="badge badge-skill">Git / GitHub</span>
+                            <span class="badge badge-skill">Notion</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="skill-category">SPORTS &amp; REHABILITATION</div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge badge-skill">운동처방 및 재활</span>
+                            <span class="badge badge-skill">스포츠 테이핑</span>
+                            <span class="badge badge-skill">수중 운동 지도</span>
+                            <span class="badge badge-skill">시니어·장애인 헬스케어</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience & Projects 섹션 -->
+            <section class="mb-5" id="projects">
+                <h2 class="section-title">Experience &amp; Projects</h2>
+
+                <!-- 프로젝트 1 -->
+                <div class="mb-4">
+                    <div class="exp-header mb-1">
+                        <div>
+                            <h3 class="h6 fw-bold mb-0">OZ AI 헬스케어 부트캠프</h3>
+                            <span class="text-secondary small">데이터 분석 및 머신러닝 모델링 팀 프로젝트</span>
+                        </div>
+                        <span class="text-secondary small">2026.08 - 진행중</span>
+                    </div>
+
+                    <div class="mt-3 ps-2 border-start">
+                        <div class="exp-header">
+                            <strong class="small">난임 시술 임신 성공률 예측 머신러닝 파이프라인 구축</strong>
+                            <span class="text-muted small">2026.10</span>
+                        </div>
+                        <ul class="text-secondary small mt-1 mb-3 lh-base">
+                            <li>Stratified 5-Fold 교차 검증 및 Out-of-Fold 타겟 인코딩 기반 베이스라인 모델 구축</li>
+                            <li>LightGBM, XGBoost, CatBoost, Random Forest 앙상블 및 Optuna 하이퍼파라미터 튜닝</li>
+                        </ul>
+
+                        <div class="exp-header">
+                            <strong class="small">웨어러블 생체 데이터 위험군 분석 및 통계적 가설 검정</strong>
+                            <span class="text-muted small">2026.09</span>
+                        </div>
+                        <ul class="text-secondary small mt-1 mb-0 lh-base">
+                            <li>MongoDB(PyMongo)를 활용한 비정형 웨어러블 생체 신호 적재 및 위험군 분류</li>
+                            <li>건강 데이터셋 주요 지표 간 상관관계 및 통계적 유의성 검정 수행</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 경력 2 -->
+                <div class="mb-4">
+                    <div class="exp-header mb-1">
+                        <div>
+                            <h3 class="h6 fw-bold mb-0">United Swimming (호주 시드니)</h3>
+                            <span class="text-secondary small">수영 강사 (Swimming Instructor)</span>
+                        </div>
+                        <span class="text-secondary small">2026.01 - 2026.04</span>
+                    </div>
+                    <ul class="text-secondary small mt-2 mb-0 lh-base">
+                        <li>Epping, North Parramatta, Croydon 센터 및 장애인 특수학교 수영장 수업 진행</li>
+                        <li>만 3세~18세 및 장애 학생 대상 Level 1~4 단계별 맞춤형 수중 안전·영법 지도</li>
+                    </ul>
+                </div>
+
+                <!-- 경력 3 -->
+                <div>
+                    <div class="exp-header mb-1">
+                        <div>
+                            <h3 class="h6 fw-bold mb-0">대전대학교 취창업진로지원팀</h3>
+                            <span class="text-secondary small">근로장학생 (행정·진로상담 보조 및 아동 돌봄)</span>
+                        </div>
+                        <span class="text-secondary small">2025.07 ~ 2025.12</span>
+                    </div>
+                    <ul class="text-secondary small mt-2 mb-0 lh-base">
+                        <li>취창업진로지원팀 행정·회계 보조, 홍보물 제작·배포 및 1:1 진로 상담 지원</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education 섹션 -->
+            <section class="mb-5">
+                <h2 class="section-title">Education</h2>
+                <div class="history-grid">
+                    <div class="history-date">졸업</div>
+                    <div>
+                        <strong>대전대학교</strong> 스포츠건강재활학과 <span class="text-secondary small">(시니어 헬스케어 마이크로디그리 이수)</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awards 섹션 -->
+            <section class="mb-5">
+                <h2 class="section-title">Awards</h2>
+                <div class="history-grid">
+                    <div class="history-date">학부 수상</div>
+                    <div>
+                        <strong>최우수상</strong> <span class="text-secondary">- 배리어프리 협업 아이디어 컨퍼런스 (취약계층 위치추적 배지 기획)</span>
+                    </div>
+                    <div>
+                        <strong>최우수상</strong> <span class="text-secondary">- 학생주도형 융합 학업활동 설계 공모전</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications 섹션 -->
+            <section>
+                <h2 class="section-title">Certifications</h2>
+                <div class="history-grid">
+                    <div class="history-date">2023.12</div>
+                    <div><strong>노인스포츠지도사</strong> <span class="text-secondary">(문화체육관광부)</span></div>
+
+                    <div class="history-date">2024.12</div>
+                    <div><strong>2급 생활스포츠지도사</strong> <span class="text-secondary">(문화체육관광부)</span></div>
+
+                    <div class="history-date">2024.12</div>
+                    <div><strong>유소년스포츠지도사</strong> <span class="text-secondary">(문화체육관광부)</span></div>
+
+                    <div class="history-date">2024.12</div>
+                    <div><strong>체력코치</strong> <span class="text-secondary">(대한체력코치협회)</span></div>
+
+                    <div class="history-date">2025.12</div>
+                    <div><strong>장애인스포츠지도사</strong> <span class="text-secondary">(문화체육관광부)</span></div>
+
+                    <div class="history-date">2026.08</div>
+                    <div><strong>컴퓨터활용능력 2급</strong> <span class="text-secondary">(대한상공회의소)</span></div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
